@@ -1,0 +1,454 @@
+@font-face {
+    font-family: Montserrat__Bold;
+    src: url('../Fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+    font-family: Montserrat__SemiBold;
+    src: url('../Fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: Petrona__Bold;
+    src: url('../Fonts/Petrona/static/Petrona-Bold.ttf');
+}
+
+@font-face {
+    font-family: Petrona__ExtraBold;
+    src: url('../Fonts/Petrona/static/Petrona-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Petrona__SemiBold;
+    src: url('../Fonts/Petrona/static/Petrona-SemiBold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.bg__banner {
+    height: 100vh;
+}
+
+.assets__img img {
+    width: 100%;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.assets__img {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.text__contain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.row__ts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column__ts {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.left__ts__col {
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.right__ts__col {
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.head__text {
+    text-align: center;
+    background-color: #FF8462;
+    margin: 20px -72px 0px 0px;
+    padding: 10px;
+}
+
+.head__text h1 {
+    color: #FFFFFF;
+    font-size: calc(30pt + 0.15vw);
+    font-family: 'Petrona__ExtraBold';
+    line-height: 1.2195;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1080px) {
+    .head__text h1 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .head__text {
+        margin: 20px -58px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .head__text {
+        margin: 20px -40px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .head__text h1 {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .head__text {
+        margin: 20px -16px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .head__text {
+        margin: 0px -16px 0px 0px;
+        padding: 8px;
+    }
+}
+
+.para__text {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.para__text p {
+    font-family: 'Petrona__SemiBold';
+    color: #FFFFFF;
+    font-size: calc(18pt + 0.15vw);
+    line-height: 1.2195;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1080px) {
+    .para__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .para__text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+.border1 {
+    position: relative;
+    border: 3px solid #FFF9F5;
+    margin: 30px 150px;
+    padding: 50px 0px;
+}
+
+.border__org {
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    background-color: #FF8462;
+    box-shadow: 0px 12px 24px rgba(63, 61, 61, 0.2);
+    padding: 10px 50px;
+}
+
+.border__org p {
+    color: #FFFFFF;
+    font-size: calc(15pt + 0.15vw);
+    line-height: 1.2195;
+    font-family: 'Petrona__Bold';
+    letter-spacing: 0.02em;
+}
+
+.border__org span {
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Petrona__SemiBold';
+}
+
+@media screen and (max-width: 1080px) {
+    .border__org p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .border__org span {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .border1 {
+        margin: 20px 90px;
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .border1 {
+        margin: 20px 20px;
+        padding: 30px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .border__org p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .border__org span {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .border1 {
+        margin: 0px 10px;
+        padding: 20px 0px;
+    }
+    .border__org {
+        padding: 10px 10px;
+    }
+}
+
+.white__para {
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+.white__para p {
+    color: #FFFFFF;
+    font-size: calc(16pt + 0.15vw);
+    line-height: 1.2195;
+    font-family: 'Petrona__Bold';
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1080px) {
+    .white__para p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .white__para {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .white__para p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .white__para {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .mob {
+        background-color: #596cb3;
+        padding: 38px;
+        width: 200%;
+    }
+}
+
+.bot__text {
+    margin: 100px 0px 0px 50px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1920px) {
+    .bot__text {
+        margin: 140px 0px 0px 50px;
+    }
+}
+
+.bot__text p {
+    color: #FFFFFF;
+    font-size: calc(12pt + 0.15vw);
+    line-height: 1.2195;
+    font-family: 'Petrona__SemiBold';
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1080px) {
+    .bot__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .bot__text {
+        margin: 30px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bot__text p {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .bot__text {
+        margin: 10px 0px 0px 0px;
+    }
+}
+
+.div__input {
+    max-width: 65%;
+    margin: auto;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #F4F3F3;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.form-control {
+    color: #212529;
+    background-color: #F4F3F3;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+input[type="text"] {
+    font-size: calc(10pt + 0.15vw);
+    font-family: 'Montserrat__SemiBold';
+}
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::-moz-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::-ms-input-placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #000000;
+}
+
+@media screen and (max-width: 1080px) {
+    input[type="text"] {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    input[type="text"] {
+        font-size: calc(6pt + 0.15vw);
+    }
+    .div__input {
+        max-width: 80%;
+    }
+}
+
+.bt__div {
+    text-align: center;
+}
+
+.bt__div button {
+    border: none;
+    background-color: #FF5222;
+    color: #FFFFFF;
+    font-size: calc(10pt + 0.15vw);
+    font-family: 'Montserrat__Bold';
+    padding: 10px 60px;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+}
+
+.bt__div:hover button {
+    color: black;
+    background-color: #FFFFFF;
+    transform: translateX(3px);
+    transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 1080px) {
+    .bt__div button {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bt__div button {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .bt__div button {
+        font-size: calc(6pt + 0.15vw);
+        padding: 10px 20px;
+    }
+}
+
+.ls__para {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.ls__para p {
+    color: #D9D8D8;
+    font-size: calc(12pt + 0.15vw);
+    font-family: 'Montserrat__SemiBold';
+}
+
+@media screen and (max-width: 1080px) {
+    .ls__para p {
+        font-size: calc(8pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ls__para p {
+        font-size: calc(6pt + 0.15vw);
+    }
+}
